@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDMI6_TP_02.Page_Produto">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Código"
+                   x:Name="txtId" />
+            <Editor Placeholder="Descrição"
+                   x:Name="txtDescricao" 
+                   HeightRequest="130" />
+            <Entry Placeholder="Categoria"
+                   x:Name="txtCategoria" />
+            <Entry Placeholder="Quantidade"
+                   x:Name="txtQuantidade" />
+            <Entry Placeholder="Preço"
+                   x:Name="txtPreco" />
+
+            <Button Text="Salvar"
+                    Clicked="btnSave" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDMI6_TP_02.Page_Home">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <!--<Label Text="Nome"/>
+            <Entry x:Name="Nome"/>
+            <Label Text="Idade"/>
+            <Entry x:Name="Idade"/>
+            <Label Text="Profissão"/>
+            <Entry x:Name="Profissao"/>
+            <Label Text="Pais"/>
+            <Entry x:Name="Pais"/> -->
+
+            <Label Text="Nome" Font="15" />
+            <Entry x:Name="Nome" Placeholder="Nome" />
+            <Label Text="Idade" Font="15" />
+            <Entry x:Name="Idade" Placeholder="Idade" Keyboard="Numeric"/>
+            <Label Text="Profissão" Font="15" />
+            <Entry x:Name="Profissao" Placeholder="Profissão" />
+            <Label Text="Pais" Font="15" />
+            <Entry x:Name="Pais" Placeholder="Pais" />
+
+
+
+            <Button Text="Salvar"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Clicked="btnSave" 
+                    TextColor="White"
+                    BackgroundColor="blue"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

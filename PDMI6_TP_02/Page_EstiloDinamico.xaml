@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PDMI6_TP_02"
+             x:Class="PDMI6_TP_02.Page_EstiloDinamico">
+    <ContentPage.Content>
+        <StackLayout>
+        <SearchBar Placeholder="Pesquisar"/>
+        <Label Text="Horário" HorizontalOptions="Center"/>
+
+        <DatePicker HorizontalOptions="Center" MinimumDate="{Binding MinDate}"
+                        MaximumDate="{Binding MaxDate}"
+                        Date="{Binding SelectedDate}"/>
+        <Label Text="{Binding DateTime,StringFormat='{0:T}'}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+            <Label.BindingContext>
+                <local:Relogio/>
+            </Label.BindingContext>
+        </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
